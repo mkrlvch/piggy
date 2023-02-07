@@ -1,0 +1,59 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid rgb(230, 48, 139);
+    margin: auto;
+    
+}
+
+#pig {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/png-transparent-pig-computer-icons-tummy-pigs-free-mammal-animals-animal-thumbnail.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cake {
+    width: 30px;
+    height: 30px;
+    background-image: url(img/q-mark-copy_106724.png);
+    background-size: 30px 40px;
+    position: relative;
+    top: 110px;
+    left: 570px;
+    animation: cakeMove 1s infinite linear;
+}
+
+@keyframes cakeMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+    
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
